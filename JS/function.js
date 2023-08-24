@@ -111,9 +111,9 @@ function getMaggioreMinoreUguali(firstNumber, secondNumber, thirdNumber) {
 
     }
 }
-
+/*
 let messageMag = '';
 let messageMin = '';
 let messageUguali = '';
 let result = getMaggioreMinoreUguali(firstNumber, secondNumber, thirdNumber);
-alert(messageMag + '\n' + messageMin + messageUguali);
+alert(messageMag + '\n' + messageMin + messageUguali);*/
