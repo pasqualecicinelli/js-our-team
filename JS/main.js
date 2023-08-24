@@ -52,15 +52,27 @@ for (let key of arrayInformation) {
  * Stampare le stesse informazioni su DOM sottoforma di stringhe 
  */
 
-let printString = document.getElementById('print-Stringa');
+let printElement = document.getElementById('print');
 
 for (let keyInfoDom of arrayInformation) {
-    
-    printString.innerText+=`
+
+    printElement.innerText += `
     ${keyInfoDom.nome}
     ${keyInfoDom.ruolo}
     ${keyInfoDom.foto}
     `
+}
+
+/**
+ * BONUS 1:
+ * Trasformare la stringa foto in una immagine effettiva
+ */
+let imgElement = document.getElementById('img');
+
+for (let keyPicture of arrayInformation) {
+
+    imgElement.innerHTML +=
+        '<img src="./img/' + `${keyPicture.foto}` + '">';
 }
 
 
