@@ -41,4 +41,4 @@ barbara-ramos-graphic-designer.jpg
 
 Creo un Array di Information
 Creo un oggetto con :nome, ruolo, foto 
-Con un ciclo for in stampo le informazioni
+Con un ciclo for of stampo le informazioni

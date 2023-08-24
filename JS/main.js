@@ -1,3 +1,8 @@
+/**
+ * MILESTONE 0:
+ * Creare l’array di oggetti con le informazioni fornite.
+ */
+
 const arrayInformation = [
     {
         nome: 'Wayne Barnett',
@@ -22,7 +27,7 @@ const arrayInformation = [
         foto: 'angela-lopez-social-media-manager.jpg',
     },
     {
-        nome: 'Scott Estrada', 
+        nome: 'Scott Estrada',
         ruolo: 'Developer',
         foto: 'scott-estrada-developer.jpg',
     },
@@ -34,10 +39,29 @@ const arrayInformation = [
 ];
 
 /** MILESTONE 1:
-Stampare su console, per ogni membro del team, 
+* Stampare su console, per ogni membro del team, 
 le informazioni di nome, ruolo e la stringa della foto 
 */
 for (let key of arrayInformation) {
     console.log(key);
-} 
+}
+
+
+/**
+ * MILESTONE 2:
+ * Stampare le stesse informazioni su DOM sottoforma di stringhe 
+ */
+
+let printString = document.getElementById('print-Stringa');
+
+for (let keyInfoDom of arrayInformation) {
+    
+    printString.innerText+=`
+    ${keyInfoDom.nome}
+    ${keyInfoDom.ruolo}
+    ${keyInfoDom.foto}
+    `
+}
+
+
 
