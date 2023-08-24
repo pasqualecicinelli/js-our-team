@@ -75,5 +75,34 @@ for (let keyPicture of arrayInformation) {
         '<img src="./img/' + `${keyPicture.foto}` + '">';
 }
 
+/**
+ * BONUS 2:
+ * Organizzare i singoli membri in card/schede
+ * Consigli del giorno:
+ * Ragioniamo come sempre a step.
+ * Prima la logica in italiano e poi traduciamo in codice.
+ * E ricordiamoci che console.log() è nostro amico!
+ */
+
+let allInfoPrint = document.getElementById('cardBoot');
+
+allInfoPrint.innerHTML += '<h1 class="card-title w-100 text-center mt-5 mb-3">OUR TEAM</h1>';
+
+for (let allInfo of arrayInformation) {
+
+    allInfoPrint.innerHTML +=
+        '<div class="card m-3" style="width: 25rem;">' +
+        '<img src="./img/' + `${allInfo.foto}` + '">' +
+        '<div class="card-body">' +
+        '<h5 class="card-title">Information</h5>' +
+        '</div>' +
+        '<ul class="list-group list-group-flush">' +
+        ' <li class="list-group-item">' + `${allInfo.nome}` + '</li>' +
+        ' <li class="list-group-item">' + `${allInfo.ruolo}` + '</li>' +
+        '</ul>' +
+        '</div>';
+
+}
+
 
 
